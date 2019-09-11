@@ -11,7 +11,10 @@
 
 
  app.post('/',function(req,res){
-  res.send("Thank You For posting");
+
+ 	var Email = req.body.email;
+ 	var Password = req.body.password;
+  res.send("Email Address is" + Email + "& Password is" + Password);
 
  });
 
